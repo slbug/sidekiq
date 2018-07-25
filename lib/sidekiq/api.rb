@@ -267,7 +267,7 @@ module Sidekiq
       initial_size = size
       deleted_size = 0
       page = 0
-      page_size = 50
+      page_size = 1000
 
       while true do
         range_start = page * page_size - deleted_size
